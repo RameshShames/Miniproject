@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
@@ -14,10 +15,12 @@ import java.util.Random;
 
 public class risk extends Fragment {
 EditText t1,t2;
+    @Nullable
+    @Override
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.profile, container, false);
+        View view = inflater.inflate(R.layout.detectrisk, container, false);
         t1=view.findViewById(R.id.editTextTextPersonName3);
         t2=view.findViewById(R.id.editTextTextPersonName2);
         List<Integer> list = new ArrayList<>();
