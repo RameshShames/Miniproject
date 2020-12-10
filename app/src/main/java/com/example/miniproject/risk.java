@@ -1,20 +1,23 @@
 package com.example.miniproject;
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 
-public class risk extends Fragment {
+public class risk extends Fragment   {
 EditText t1,t2;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater,
@@ -42,7 +45,7 @@ EditText t1,t2;
         if(x<40){
             t2.setText("Danger");
         }
+
         return view;
     }
-
-}
+   }
